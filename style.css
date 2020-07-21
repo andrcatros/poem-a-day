@@ -1,0 +1,55 @@
+/*Global styling*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+pre {
+    font-family: Arial
+}
+
+/*Body div*/
+
+.bodyDiv {
+    width: 50%;
+    top: 160px;
+    position:fixed;
+    margin-left: 25%;
+    padding-top: 30px;
+    padding-left: 20px;
+    border-style:solid;
+    font-size: 20px;
+
+}
+
+@media (max-width: 579px){
+    .bodyDiv {
+        width: 70%;
+        position:fixed;
+        left: 50%;
+        margin-left: -37%;
+        padding-top: 50px;
+        font-size: 18px;
+        overflow: hidden;
+    }
+}
+
+/* Nav bar */
+
+/* Footer */
+footer {
+    position:fixed;
+    margin-top: 5px;
+    bottom: 1%;
+    overflow: hidden;
+
+}
