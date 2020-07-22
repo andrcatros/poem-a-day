@@ -3,18 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Poem of the Day</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav><ul>
-            <li>About</li>
-            <li>More Poems</li>
+            <div><li><a href='#'>About</a></li></div>
+            <div><li><a href='#'>More Poems</a></li></div>
         </ul> </nav>
-        <header><h1>Today's Poem</h1></header>
+        <header><div><h1>Today's Poem</h1></div></header>
+        <div class='container'>
         <main>
             <div class="bodyDiv">
             <pre id="title"> </pre> by <pre id="author"></pre> 
@@ -26,7 +28,7 @@
             This website created using the <a href="https://poems.one/api/poem/">Poems One API</a>. 
         </footer>
 
-        
+        </div>
         <script>
             let requestURL = "https://api.poems.one/pod"
             let request = new XMLHttpRequest();

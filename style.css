@@ -1,8 +1,7 @@
 /*Global styling*/
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Work Sans', sans-serif;
     list-style-type: none;
-    overflow: hidden;
 }
 
 a {
@@ -13,41 +12,80 @@ a:hover {
     color: black;
 }
 
+/* style JSON data */
 pre {
-    font-family: Arial
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* set up flex */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+@media (max-width: 575px){
+    header {
+        font-size: 22px !important;
+    }
+}
+
+header {
+    text-align: center;
+    font-size: 28px;
 }
 
 /*Body div*/
 
 .bodyDiv {
-    width: 50%;
-    top: 160px;
-    position:fixed;
-    margin-left: 25%;
-    padding-top: 30px;
-    padding-left: 20px;
-    border-style:solid;
-    font-size: 20px;
+    background-color: pink;
+    margin: 0px 120px 0px 120px;
 
 }
 
-@media (max-width: 579px){
+@media (max-width: 768px){
+    .bodyDiv{
+        margin: 50px;
+    }
+}
+
+@media (max-width: 575px){
     .bodyDiv {
-        width: 70%;
-        position:fixed;
-        left: 50%;
-        margin-left: -37%;
-        padding-top: 50px;
-        font-size: 18px;
-        overflow: hidden;
+        background-color: green;
+        margin: 20px;
+
     }
 }
 
 /* Nav bar */
 
+@media (max-width: 575px) {
+    nav {
+        background-color: yellow;
+    }
+}
+
+nav {
+
+    background-color: peachpuff;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+ul > div {
+    padding: 7px;
+}
+
 /* Footer */
 footer {
-    position:fixed;
     margin-top: 5px;
     bottom: 1%;
     overflow: hidden;
