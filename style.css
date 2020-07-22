@@ -23,6 +23,7 @@ pre {
 .container {
     display: flex;
     flex-direction: column;
+    background-image: url("dot-grid.png");
 }
 
 /* Header */
@@ -30,32 +31,40 @@ pre {
 @media (max-width: 575px){
     header {
         font-size: 22px !important;
+        color: #2e2f33;
     }
 }
 
 header {
     text-align: center;
-    font-size: 28px;
+    font-size: 32px;
+    color: #2e2f33;
 }
 
 /*Body div*/
 
 .bodyDiv {
-    background-color: pink;
-    margin: 0px 120px 0px 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f5f7ff;
+    margin: 0% 20% 0px 20%;
+    padding-left: 160px;
+    padding-left: 40px;
 
 }
 
 @media (max-width: 768px){
     .bodyDiv{
         margin: 50px;
+        padding-left: 50px;
     }
 }
 
 @media (max-width: 575px){
     .bodyDiv {
-        background-color: green;
+        background-color: #f5f7ff;
         margin: 20px;
+        padding-left: 20px;
 
     }
 }
@@ -70,7 +79,7 @@ header {
 
 nav {
 
-    background-color: peachpuff;
+    background-color: #e6ebff; 
 }
 
 nav > ul {
@@ -86,8 +95,9 @@ ul > div {
 
 /* Footer */
 footer {
-    margin-top: 5px;
+    margin-top: 10px;
     bottom: 1%;
     overflow: hidden;
+    background: snow;
 
 }

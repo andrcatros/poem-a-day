@@ -19,11 +19,14 @@
         <div class='container'>
         <main>
             <div class="bodyDiv">
-            <pre id="title"> </pre> by <pre id="author"></pre> 
-            <div><pre id ="poemBody"> </pre> </div>
-        </div>
-        </main>
+            <div class="poem"><b><pre id="title"> </pre></b> by <b><pre id="author"></pre></b>
+            <div><pre id ="poemBody"> </pre> </div> </div>
 
+            
+        </div>
+
+        </main>
+        </div>
         <footer>
             This website created using the <a href="https://poems.one/api/poem/">Poems One API</a>. 
         </footer>
@@ -41,7 +44,7 @@
                 console.log(poemOfTheDay['contents']['poems'][0]);
                 document.querySelector("#author").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['author'];
                 document.querySelector("#title").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['title'];
-                document.querySelector("#poemBody").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['poem'];
+                document.querySelector("#poemBody").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['poem'].split('    ').join("<br> <br>");
             }
         </script>
     </body>
