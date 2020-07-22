@@ -6,14 +6,14 @@
         <title>Poem of the Day</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav><ul>
-            <div><li><a href='#'>About</a></li></div>
-            <div><li><a href='#'>More Poems</a></li></div>
+            <div><li><a href='index.html'>Home</a></li></div>
+            <div><li><a href='about.html'>About</a></li></div>
+            <div><li><a href='https://poets.org/'>More Poems</a></li></div>
         </ul> </nav>
         <header><div><h1>Today's Poem</h1></div></header>
         <div class='container'>
@@ -41,7 +41,6 @@
 
             request.onload = function(){
                 const poemOfTheDay = request.response;
-                console.log(poemOfTheDay['contents']['poems'][0]);
                 document.querySelector("#author").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['author'];
                 document.querySelector("#title").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['title'];
                 document.querySelector("#poemBody").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['poem'].split('    ').join("<br> <br>");

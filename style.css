@@ -44,12 +44,12 @@ header {
 /*Body div*/
 
 .bodyDiv {
-    display: flex;
-    flex-direction: row;
     background-color: #f5f7ff;
-    margin: 0% 20% 0px 20%;
-    padding-left: 160px;
-    padding-left: 40px;
+    margin: 0% 20% 0% 20%;
+    padding-left: 5%;
+    padding-bottom: 7%;
+    padding-top: 2%;
+    padding-right: 5%;
 
 }
 
