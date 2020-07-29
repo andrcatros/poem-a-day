@@ -39,8 +39,8 @@
             request.responseType = 'json';
             request.send();
 
-            request.onload = function(){
-                const poemOfTheDay = request.response;
+            request.onload = async function(){
+                const poemOfTheDay = await request.response;
                 document.querySelector("#author").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['author'];
                 document.querySelector("#title").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['title'];
                 document.querySelector("#poemBody").innerHTML = poemOfTheDay['contents']['poems'][0]['poem']['poem'].split('    ').join("<br> <br>");
